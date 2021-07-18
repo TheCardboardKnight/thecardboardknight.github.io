@@ -24,6 +24,10 @@ h1, h2, h3, h4, h5, h6 {
 	@include transition (all 0.4s ease-in-out);
 }
 
+.btn-secondary { background-color:  $theme-color-secondary; border: 1px solid  darken($theme-color-secondary, 10%); }
+.btn-secondary:hover { background-color:  darken($theme-color-secondary, 10%); }
+
+
 .btn:focus, .btn.focus {
 	box-shadow: none !important;
 }

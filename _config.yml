@@ -32,5 +32,16 @@ sociallinks:
     icon : "fa-github"
     url : "https://github.com/TheCardboardKnight/App"
 
+herobuttons:
+  -
+    title : "Google Play"
+    icon : "fa-google-play"
+    url : "https://github.com/TheCardboardKnight/App"
+
+  -
+    title : "Github"
+    icon : "fa-github"
+    url : "https://github.com/TheCardboardKnight/App"
+
 sass:
     style: :compressed

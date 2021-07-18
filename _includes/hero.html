@@ -5,10 +5,13 @@
                 <h2 class="site-headline font-weight-bold mt-lg-5 pt-lg-5">{{ site.subtitle }}</h2>
                 <div class="site-tagline mb-3">{{ site.description }}</div>
                 <div class="cta-btns">
-                    <div class="mb-4"><a class="btn btn-primary font-weight-bold theme-btn" href="https://themes.3rdwavemedia.com/bootstrap-templates/free/nova-bootstrap-landing-page-template-for-mobile-apps/">Try Nova for FREE</a></div>
                     <ul class="app-stores list-unstyled list-inline mx-auto mx-md-0 d-inline-block">
-                        <li class="list-inline-item mr-3"><a href="#{{ site.appstoreid }}"><img class="ios" src="assets/images/appstore-apple.svg" alt="app-store"></a></li>
-                        <li class="list-inline-item"><a href="#{{ site.playstoreid }}"><img class="android" src="assets/images/appstore-android.svg" alt="google play"></a></li>
+                        {% for link in site.herobuttons %}
+                            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+                            <li class="list-inline-item">
+                                <a class="btn btn-{% if thecycle == 'odd' %}primary{% else %}secondary{% endif %} font-weight-bold theme-btn" href="{{ link.url }}"><i class="fab {{ link.icon }} fa-fw"></i> {{ link.title }} </a>
+                            </li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
