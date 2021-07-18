@@ -1,6 +1,6 @@
 ---
 title: scoringiscool_what
-image: test.jpg
+image: assets/images/product-figure-2.png
 
 cards:
   - 

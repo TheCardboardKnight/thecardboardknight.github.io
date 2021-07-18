@@ -1,11 +1,11 @@
 ---
-title: scoringiscool_what
-image: test.jpg
+title: collection
+image: assets/images/feature_collection.png
 
 cards:
   - 
-    title : "Feature Title"
-    description: "cool feature"
+    title : "Collection Management"
+    description: "Managed your collection - add, remove, log, rate, just about anything you can do on BGG.com"
   - 
     title : "Feature Title2"
     description: "cool feature2"
